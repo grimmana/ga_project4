@@ -490,14 +490,14 @@ def item_detail(request, pk):
     return render(request, 'homi/item_detail.html', {'item': item})
 ```
 ========= GIT COMMIT 13 ==========
-Item_part detail
+Item detail
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
 ```python
-# part/urls.py
-path('item_parts/<int:pk>', views.item_part_detail, name='item_part_detail')
+# homi/urls.py
+path('items/<int:pk>', views.item_detail, name='item_detail')
 ```
------ stop here ---------
+========= GIT COMMIT 14 ==========
 Item_part detail 
 TEMPLATE: in this path /homi_django/homi/templates/part/: 
 Create a new file `item_part_detail.html` with the following code:
