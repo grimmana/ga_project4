@@ -695,7 +695,7 @@ add the following code into `base.html`:
   </body>
 </html>
 ```
---------- stop here ----------
+========= GIT COMMIT 20 ==========
 # Item Create form
 
 In the directory /homi_django/homi/: create a new file `forms.py` with the following code:
@@ -712,7 +712,7 @@ class ItemForm(forms.ModelForm):
         model = Item
         fields = ('name', 'ident',)
 ```
-------- stop here ---------
+ 
 
 In this path /homi_django/homi: 
 add the following code into `views.py`:
@@ -733,7 +733,7 @@ def item_create(request):
         form = ItemForm()
     return render(request, 'homi/item_form.html', {'form': form})
 ```
--------- stop here -----------
+========= GIT COMMIT 21 ==========
 Item_part create
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
