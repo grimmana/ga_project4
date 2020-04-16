@@ -288,7 +288,7 @@ Then, in `homi_django/homi_django/settings.py` find the `INSTALLED_APPS` list.
 Add `django_extensions` to the bottom of this section.
 
 ```py
-# part_django/settings.py
+# homi_django/settings.py
 # Application definition
 
 INSTALLED_APPS = [
@@ -345,7 +345,7 @@ def room_list(request):
     return render(request, 'homi/room_list.html', {'rooms': rooms})
 
 def item_list(request):
-    items = Item_part.objects.all()
+    items = Item.objects.all()
     return render(request, 'homi/item_list.html', {'items': items})
 ```
 ========= GIT COMMIT 5 ==========
