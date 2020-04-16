@@ -673,7 +673,7 @@ a.no-fav {
   text-decoration: none;
 }
 ```
----------- stop here -----------
+========= GIT COMMIT 19 ==========
 In this path /homi_django/homi/templates/homi/: 
 add the following code into `base.html`:
 
