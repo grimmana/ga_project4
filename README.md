@@ -430,9 +430,9 @@ Check the following paths (listed in
 
 ========= GIT COMMIT 8 ==========
 
-# Item Detail/Show pages
+# Room Detail/Show pages
 
-Item detail
+Room detail
 View: in the /part_django/homi/views.py file, add the following code:
 
 ```python
@@ -498,15 +498,15 @@ URL: in the /homi_django/homi/urls.py file, add the following code:
 path('items/<int:pk>', views.item_detail, name='item_detail')
 ```
 ========= GIT COMMIT 14 ==========
-Item_part detail 
-TEMPLATE: in this path /homi_django/homi/templates/part/: 
-Create a new file `item_part_detail.html` with the following code:
+Item detail ia ma here
+TEMPLATE: in this path /homi_django/homi/templates/homi/: 
+Create a new file `item_detail.html` with the following code:
 
 ```html
-<h2>{{ item_part.name }} <a href="">(edit)</a></h2>
-<h3>By: {{ item_part.item.name }}</h3>
+<h2>{{ item.name }} <a href="">(edit)</a></h2>
+<h3>By: {{ item.room.name }}</h3>
 ```
------- stop here --------
+------ stop here -------- 
 Switch to: Item detail 
 HTML/HREF: Go back and add hrefs between the li tags in: /homi_django/homi/templates/homi/item_detail.html
 
