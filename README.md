@@ -298,8 +298,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'part',
-    'jdango_extensions'
+    'homi',
+    'django_extensions'
 ]
 
 To get to a python shell, you can now run:
@@ -387,30 +387,31 @@ Create the templates that will be used to render the views.
 In the directory /homi_django/homi/: create a `templates` directory and a `homi` subdirectory.
 
 In this path /homi_django/homi/templates/homi/: create a new file
-`item_list.html` with the following code:
+`room_list.html` with the following code:
 
 ```html
-<!-- part/item_list.html -->
-<h2>Items <a href="">(+)</a></h2>
+<!-- homi/templates/homi/room_list.html -->
+<h2>Rooms <a href="">(+)</a></h2>
 <ul>
-  {% for item in items %}
+  {% for room in rooms %}
   <li>
-    <a href="">{{ item.name }}</a>
+    <a href="">{{ room.name }}</a>
   </li>
   {% endfor %}
 </ul>
 ```
---------- stop here ---------
-In this path /part_django/homi/templates/homi/: 
+========= GIT COMMIT 7 ==========
+In this path /homi_django/homi/templates/homi/: 
 create  a new file
-`item_part_list.html` with the following code:
+`item_list.html` with the following code:
 
 ```html
-<h2>Item_parts</h2>
+<!-- homi/item_list.html -->
+<h2>Items</h2>
 <ul>
-  {% for item_part in item_parts %}
+  {% for item in items %}
   <li>
-    <a href="">{{ item_part.name }}</a>
+    <a href="">{{ item.name }}</a>
   </li>
   {% endfor %}
 </ul>
@@ -422,11 +423,10 @@ Ensure the server is currently running or start the server:
 python3 manage.py runserver 8000
 ```
 Check the following paths (listed in 
-/part_django/part/urls.py) in the browser,
-on the webpage you should see the lists of: 
+/homi_django/homi/urls.py) in the browser, on the webpage you should see the lists of: 
 
-`localhost:8000`  Items
-`http://localhost:8000/item_parts/` Items_parts
+`localhost:8000`  Rooms
+`http://localhost:8000/items/` Items
 
 ---- stop here -----
 
