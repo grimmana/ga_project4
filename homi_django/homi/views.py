@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Room, Item
-from .forms import RoomForm
+from .forms import RoomForm, ItemForm
 # Create your views here.
 
 # homi/views.py
@@ -31,4 +31,12 @@ def room_create(request):
         form = RoomForm()
     return render(request, 'homi/room_form.html', {'form': form})
 
-    
+def item_create(request):
+    if request.method == 'POST':
+        form = ItemForm(request.POST)
+        if form.is_valid():
+            item = form.save()
+            return redirect('item_detail', pk=item.pk)
+    else:
+        form = ItemForm()
+    return render(request, 'homi/item_form.html', {'form': form})

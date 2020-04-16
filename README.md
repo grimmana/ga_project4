@@ -791,7 +791,7 @@ class Item_partForm(forms.ModelForm):
         model = Item_part
         fields = ('name', 'number', 'notes',)
 ```
----------- stop here ----------
+========= GIT COMMIT 24 ==========
 In this path /home_django/homi: 
 add the following code into `views.py`:
 
