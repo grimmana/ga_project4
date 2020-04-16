@@ -548,7 +548,7 @@ create a new file
   </body>
 </html>
 ```
--------- stop here --------------
+========= GIT COMMIT 17 ==========
 Switch to: Item list 
 HTML/code: Go back and add code in: /homi_django/homi/templates/homi/item_list.html
 
@@ -571,7 +571,7 @@ file.
 </ul>
 {% endblock %}
 ```
----------- stop here ------------
+========= GIT COMMIT 18 ==========
 In the directory /homi_django/homi/: create a `static` directory and a `css` subdirectory.
 
 In this path /homi_django/homi/static/css/: create a new file `part.css` with the following code:
