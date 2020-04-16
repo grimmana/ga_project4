@@ -15,3 +15,7 @@ def item_list(request):
 def room_detail(request, pk):
     room = Room.objects.get(id=pk)
     return render(request, 'homi/room_detail.html', {'room': room})
+
+def item_detail(request, pk):
+    item = Item.objects.get(id=pk)
+    return render(request, 'homi/item_detail.html', {'item': item})    

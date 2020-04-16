@@ -478,18 +478,18 @@ HTML/HREF: Go back and add hrefs between the li tags in: homi/templates/homi/roo
 </a>
 ```
 ========= GIT COMMIT 12 ==========
-# Item_part Detail/Show pages
+# Item Detail/Show pages
 
-Item_part detail
+Item detail
 View: in the /homi_django/homi/views.py file, add the following code:
 
 ```python
 # homi/views.py
-def item_part_detail(request, pk):
-    item_part = Item_part.objects.get(id=pk)
-    return render(request, 'homi/item_part_detail.html', {'item_part': item_part})
+def item_detail(request, pk):
+    item = Item.objects.get(id=pk)
+    return render(request, 'homi/item_detail.html', {'item': item})
 ```
------- stop here -------
+========= GIT COMMIT 13 ==========
 Item_part detail
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
