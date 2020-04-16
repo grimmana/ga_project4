@@ -774,7 +774,7 @@ URL/href: in the /homi_django/homi/item_list.html file, add the following code o
 </ul>
 {% endblock %}
 ```
--------- stop here ---------
+========= GIT COMMIT 23 ==========
 # Item_part Create form
 
 In the directory /homi_django/part/: add the following code to `forms.py`:
