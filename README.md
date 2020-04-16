@@ -468,16 +468,16 @@ create a new file `room_detail.html` with the following code:
 </ul>
 ```
 ========= GIT COMMIT 11 ==========
-Item detail
-HTML/HREF: Go back and add hrefs between the li tags in: homi/templates/homi/item_list.html
+Room detail info
+HTML/HREF: Go back and add hrefs between the li tags in: homi/templates/homi/room_list.html
 
 ```html
-<!-- homi/item_list.html -->
-<a href="{% url 'item_detail' pk=item.pk %}">
-  {{ item.name }}
+<!-- homi/room_list.html -->
+<a href="{% url 'room_detail' pk=room.pk %}">
+  {{ room.name }}
 </a>
 ```
-------stop here---------
+========= GIT COMMIT 12 ==========
 # Item_part Detail/Show pages
 
 Item_part detail
