@@ -428,7 +428,7 @@ Check the following paths (listed in
 `localhost:8000`  Rooms
 `http://localhost:8000/items/` Items
 
----- stop here -----
+========= GIT COMMIT 8 ==========
 
 # Item Detail/Show pages
 
@@ -437,9 +437,9 @@ View: in the /part_django/homi/views.py file, add the following code:
 
 ```python
 # homi/views.py
-def item_detail(request, pk):
-    item = Item.objects.get(id=pk)
-    return render(request, 'homi/item_detail.html', {'item': item})
+def room_detail(request, pk):
+    room = Room.objects.get(id=pk)
+    return render(request, 'homi/room_detail.html', {'room': room})
 ```
 ------ stop here --------
 Item detail
