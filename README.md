@@ -498,7 +498,7 @@ URL: in the /homi_django/homi/urls.py file, add the following code:
 path('items/<int:pk>', views.item_detail, name='item_detail')
 ```
 ========= GIT COMMIT 14 ==========
-Item detail ia ma here
+Item detail 
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
 Create a new file `item_detail.html` with the following code:
 
@@ -506,7 +506,8 @@ Create a new file `item_detail.html` with the following code:
 <h2>{{ item.name }} <a href="">(edit)</a></h2>
 <h3>By: {{ item.room.name }}</h3>
 ```
------- stop here -------- 
+========= GIT COMMIT 15 ==========
+
 Switch to: Item detail 
 HTML/HREF: Go back and add hrefs between the li tags in: /homi_django/homi/templates/homi/item_detail.html
 
@@ -515,7 +516,7 @@ HTML/HREF: Go back and add hrefs between the li tags in: /homi_django/homi/templ
   {{ item_part.name }}
 </a>
 ```
------- stop here----------
+
 Switch to: Item_part list
 HTML/HREF: Go back and add hrefs between the li tags in: /homi_django/homi/templates/part/item_part_listl.html
 
@@ -524,7 +525,7 @@ HTML/HREF: Go back and add hrefs between the li tags in: /homi_django/homi/templ
   {{ item_part.name }}
 </a>
 ```
--------- stop here -------
+========= GIT COMMIT 16 ==========
 # base.html and CSS
 
 In this path /homi_django/homi/templates/homi/: 
