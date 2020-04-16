@@ -375,7 +375,7 @@ from . import views
 
 urlpatterns = [
     path('', views.room_list, name='room_list'),
-    path('/items', views.item_list, name='item_list')
+    path('items/', views.item_list, name='item_list')
 ]
 ```
 ========= GIT COMMIT 6 ==========

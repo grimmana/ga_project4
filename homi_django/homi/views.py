@@ -9,5 +9,5 @@ def room_list(request):
     return render(request, 'homi/room_list.html', {'rooms': rooms})
 
 def item_list(request):
-    items = Item_part.objects.all()
+    items = Item.objects.all()
     return render(request, 'homi/item_list.html', {'items': items})
