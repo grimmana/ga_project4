@@ -450,24 +450,24 @@ URL: in the /homi_django/homi/urls.py file, add the following code:
 path('rooms/<int:pk>', views.room_detail, name='room_detail'),
 ```
 ========= GIT COMMIT 10 ==========
-Item detail
+Room detail
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
-create a new file `item_detail.html` with the following code:
+create a new file `room_detail.html` with the following code:
 
 ```html
-<!-- part/item_detail.html -->
-<h2>{{ item.name }} <a href="">(edit)</a></h2>
+<!-- homi/room_detail.html -->
+<h2>{{ room.name }} <a href="">(edit)</a></h2>
 
-<h3>Item_parts <a href="">(+)</a></h3>
+<h3>Items <a href="">(+)</a></h3>
 <ul>
-  {% for item_parts in item.item_parts.all %}
+  {% for items in room.items.all %}
   <li>
-    <a href="">{{ item_part.name }}</a>
+    <a href="">{{ item.name }}</a>
   </li>
   {% endfor %}
 </ul>
 ```
----------- stop here --------
+========= GIT COMMIT 11 ==========
 Item detail
 HTML/HREF: Go back and add hrefs between the li tags in: homi/templates/homi/item_list.html
 

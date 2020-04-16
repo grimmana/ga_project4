@@ -1,0 +1,11 @@
+<!-- homi/room_detail.html -->
+<h2>{{ room.name }} <a href="">(edit)</a></h2>
+
+<h3>Items <a href="">(+)</a></h3>
+<ul>
+  {% for items in room.items.all %}
+  <li>
+    <a href="">{{ item.name }}</a>
+  </li>
+  {% endfor %}
+</ul>
