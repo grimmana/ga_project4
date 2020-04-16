@@ -852,7 +852,7 @@ URL/href: in the /part_django/part/item_part_list.html file, add the following c
 </ul>
 {% endblock %}
 ```
-
+========= GIT COMMIT 28 ==========
 Item detail
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
 add the following code to h3 in `item_detail.html` :
