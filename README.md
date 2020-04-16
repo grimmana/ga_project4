@@ -811,7 +811,7 @@ def item_part_create(request):
         form = Item_partForm()
     return render(request, 'homi/item_part_form.html', {'form': form})
 ```
----------- stop here -----------
+========= GIT COMMIT 25 ==========
 Item_part create
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
@@ -819,7 +819,7 @@ URL: in the /homi_django/homi/urls.py file, add the following code:
 # homi/urls.py
 path('item_parts/new', views.item_part_create, name='item_part_create'),
 ```
----------- stop here --------
+========= GIT COMMIT 26 ==========
 Item_part form
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
 create a new file `item_part_form.html` with the following code:
@@ -834,7 +834,7 @@ create a new file `item_part_form.html` with the following code:
 </form>
 {% endblock %}
 ```
-
+========= GIT COMMIT 27 ==========
 Item_part create
 URL/href: in the /part_django/part/item_part_list.html file, add the following code on the h2 line:
 
