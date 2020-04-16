@@ -741,7 +741,7 @@ URL: in the /homi_django/homi/urls.py file, add the following code:
 # homi/urls.py
 path('items/new', views.items_create, name='item_create'),
 ```
----------- stop here ------------
+
 Item form
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
 create a new file `item_form.html` with the following code:
@@ -756,7 +756,7 @@ create a new file `item_form.html` with the following code:
 </form>
 {% endblock %}
 ```
-------- stop here ---------
+========= GIT COMMIT 22 ==========
 Item create
 URL/href: in the /homi_django/homi/item_list.html file, add the following code on the h2 line:
 
