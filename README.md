@@ -441,15 +441,15 @@ def room_detail(request, pk):
     room = Room.objects.get(id=pk)
     return render(request, 'homi/room_detail.html', {'room': room})
 ```
------- stop here --------
-Item detail
+========= GIT COMMIT 9 ==========
+Room detail
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
 ```python
 # homi/urls.py
-path('items/<int:pk>', views.item_detail, name='item_detail'),
+path('rooms/<int:pk>', views.room_detail, name='room_detail'),
 ```
------- stop here ---------
+========= GIT COMMIT 10 ==========
 Item detail
 TEMPLATE: in this path /homi_django/homi/templates/homi/: 
 create a new file `item_detail.html` with the following code:
