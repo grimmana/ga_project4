@@ -40,3 +40,14 @@ def item_create(request):
     else:
         form = ItemForm()
     return render(request, 'homi/item_form.html', {'form': form})
+
+def room_edit(request, pk):
+    room = Room.objects.get(pk=pk)
+    if request.method == "POST":
+        form = RoomForm(request.POST, instance=room)
+        if form.is_valid():
+            room = form.save()
+            return redirect('room_detail', pk=room.pk)
+    else:
+        form = RoomForm(instance=room)
+    return render(request, 'homi/item.html', {'form': form})

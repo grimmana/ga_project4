@@ -860,7 +860,7 @@ add the following code to h3 in `item_detail.html` :
 ```html
 <h3>Item_parts <a href="{% url 'item_create' %}">(+)</a></h3>
 ```
--------- stop here ---------
+========= GIT COMMIT 29 ==========
 # Item Edit form
 
 In this path /homi_django/homi: 
@@ -879,7 +879,7 @@ def item_edit(request, pk):
         form = ItemForm(instance=item)
     return render(request, 'part/item_form.html', {'form': form})
 ```
-
+========= GIT COMMIT 30 ==========
 Item edit form
 URL: in the /homi_django/homi/urls.py file, add the following code:
 
