@@ -1,6 +1,7 @@
 <!-- homi/templates/homi/room_form.html -->
 {% extends 'homi/base.html' %} {% block content %}
-<h1>New Form</h1>
+
+<h1>Form</h1>
 <form method="POST" class="room-form">
   {% csrf_token %} {{ form.as_p }}
   <button type="submit" class="save btn btn-default">Save</button>

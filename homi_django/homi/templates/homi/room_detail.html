@@ -1,9 +1,18 @@
 <!-- homi/templates/homi/room_detail.html -->
-<h2>{{ room.name }} &nbsp&nbsp<a href="{% url 'room_edit' pk=room.pk %}">(edit)</a><a href="{% url 'room_delete' pk=room.pk %}">DELETE</a></h2>
-<h3>Items <a href="{% url 'item_create' %}">(+)</a></h3>
-<ul>
-  {% for items in room.items.all %}
- 
-  {% endfor %}
-</ul>
+{% extends 'homi/base.html' %} {% block content %}
+
+<h2>{{ room.name }} <a href="{% url 'room_edit' pk=room.pk %}">(edit)</a><a href="{% url 'room_delete' pk=room.pk %}">DELETE</a></h2>
+
+    <h3>Items <a href="{% url 'item_create' %}">(+)</a></h3>
+        <ul>
+            {% for item in room.items.all %}
+        </ul>
+
+        <li>
+            <a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a>
+        </li>
+{% endfor %}
+{% endblock %}
+
+
 

@@ -1013,6 +1013,48 @@ on the webpage you should see the lists of:
 
 Check Views
 
+Issue: Three of the twelve Rooms would fail on select.
+
+Resolution: pulled the line of code from the room_detail.html. All twelve rooms display on select now.
+
+  <li>
+    <a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a>
+  </li>
+
+<div>
+    <a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a>
+</div>
 
 
+  Reverse for 'item_detail' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['items/(?P<pk>[0-9]+)$']
+1	<!-- homi/templates/homi/room_detail.html -->
+2	<h2>{{ room.name }} &nbsp&nbsp<a href="{% url 'room_edit' pk=room.pk %}">(edit)</a><a href="{% url 'room_delete' pk=room.pk %}">DELETE</a></h2>
+3	<h3>Items <a href="{% url 'item_create' %}">(+)</a></h3>
+4	<ul>
+5	  {% for items in room.items.all %}
+6	  <li>
+7	    <a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a>
+8	  </li>
+9	  {% endfor %}
+10	</ul>
+11	
+12	
 
+NoReverseMatch at /rooms/1
+Reverse for 'item_detail' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['items/(?P<pk>[0-9]+)$']
+Request Method:	GET
+Request URL:	http://localhost:8000/rooms/1
+Django Version:	3.0.5
+Exception Type:	NoReverseMatch
+Exception Value:	
+Reverse for 'item_detail' with keyword arguments '{'pk': ''}' not found. 1 pattern(s) tried: ['items/(?P<pk>[0-9]+)$']
+Exception Location:	/Users/si00621/sei/projects/ga_project4/homi_django/.env/lib/python3.8/site-packages/django/urls/resolvers.py in _reverse_with_prefix, line 677
+Python Executable:	/Users/si00621/sei/projects/ga_project4/homi_django/.env/bin/python3
+Python Version:	3.8.0
+Python Path:	
+['/Users/si00621/sei/projects/ga_project4/homi_django',
+ '/Users/si00621/.pyenv/versions/3.8.0/lib/python38.zip',
+ '/Users/si00621/.pyenv/versions/3.8.0/lib/python3.8',
+ '/Users/si00621/.pyenv/versions/3.8.0/lib/python3.8/lib-dynload',
+ '/Users/si00621/sei/projects/ga_project4/homi_django/.env/lib/python3.8/site-packages']
+Server time:	Fri, 17 Apr 2020 13:56:18 +0000

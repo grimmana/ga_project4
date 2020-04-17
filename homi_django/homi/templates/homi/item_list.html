@@ -1,7 +1,6 @@
 <!-- homi/templates/homi/item_list.html -->
-<!-- homi/templates/homi/item_list.html -->
 {% extends 'homi/base.html' %} {% block content %}
-<h2>Items - rock<a href="{% url 'item_create' %}">(+)</a></h2>
+<h2>Items <a href="{% url 'item_create' %}">(+)</a></h2>
 <ul>
   {% for item in items %}
   <li>
@@ -10,4 +9,3 @@
   {% endfor %}
 </ul>
 {% endblock %}
-
