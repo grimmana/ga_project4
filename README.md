@@ -898,7 +898,7 @@ file, add the following code to the h2 :
   {{ item.name }} <a href="{% url 'item_edit' pk=item.pk %}">(edit)</a>
 </h2>
 ```
---------- stop here ------------
+========= GIT COMMIT 31 ==========
 # Item_part Edit form
 
 In this path /part_django/part: 
