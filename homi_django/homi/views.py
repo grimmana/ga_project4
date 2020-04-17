@@ -62,3 +62,7 @@ def item_edit(request, pk):
     else:
         form = ItemForm(instance=item)
     return render(request, 'homi/item_form.html', {'form': form})
+
+def room_delete(request, pk):
+    Room.objects.get(id=pk).delete()
+    return redirect('room_list')
