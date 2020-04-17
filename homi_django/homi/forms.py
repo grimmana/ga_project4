@@ -13,4 +13,6 @@ class ItemForm(forms.ModelForm):
     class Meta:
          model = Item
          fields = ('category', 'room_name', 'name', 'brand', 'model', 'serial_number', 'purchase_date', 'purchase_price', 'warranty', 'notes',)
+
+
   
