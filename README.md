@@ -917,7 +917,7 @@ def item_part_edit(request, pk):
         form = Item_partForm(instance=item_part)
     return render(request, 'part/item_part_form.html', {'form': form})
 ```
-
+========= GIT COMMIT 32 ==========
 Item_part edit form
 URL: in the /part_django/part/urls.py file, add the following code:
 

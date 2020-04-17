@@ -1,5 +1,5 @@
 <!-- homi/room_detail.html -->
-<h2>{{ room.name }} <a href="">(edit)</a></h2>
+<h2>{{ room.name }} <a href="{% url 'room_edit' pk=room.pk %}">(edit)</a></h2>
 
 <h3>Items <a href="{% url 'room_create' %}">(+)</a></h3>
 <ul>
