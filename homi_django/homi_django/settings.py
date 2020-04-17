@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
+
+LOGIN_REDIRECT_URL = '/'
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homi',
-    'django_extensions'
+    'django_extensions',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +125,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
