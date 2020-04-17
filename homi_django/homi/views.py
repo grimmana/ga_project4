@@ -66,3 +66,7 @@ def item_edit(request, pk):
 def room_delete(request, pk):
     Room.objects.get(id=pk).delete()
     return redirect('room_list')
+
+def item_delete(request, pk):
+    Item.objects.get(id=pk).delete()
+    return redirect('item_list')

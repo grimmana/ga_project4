@@ -936,7 +936,7 @@ file, add the following code to the h2 :
   {{ item_part.name }} <a href="{% url 'item_part_edit' pk=item_part.pk %}">(edit)</a>
 </h2>
 ```
-
+========= GIT COMMIT 33 ==========
 # Item delete form
 
 In this path /part_django/part: 
@@ -967,7 +967,7 @@ file, add the following code after h3 :
   <a href="{% url 'item_delete' pk=item.pk %}">DELETE</a>
 </div>
 ```
-
+========= GIT COMMIT 34 ==========
 # Item_part delete form
 
 In this path /part_django/part: 
@@ -998,7 +998,7 @@ file, add the following code after h3 :
   <a href="{% url 'item_part_delete' pk=item_part.pk %}">DELETE</a>
 </div>
 ```
-
+========= GIT COMMIT 35 ==========
 Ensure the server is currently running or start the server:
 
 ```
