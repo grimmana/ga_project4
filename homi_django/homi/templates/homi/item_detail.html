@@ -1,2 +1,2 @@
-<h2>{{ item.name }} <a href="">(edit)</a></h2>
+<h2>{{ item.name }} <a href="{% url 'item_edit' pk=item.pk %}">(edit)</a></h2>
 <h3>By: {{ item.room.name }}</h3>
