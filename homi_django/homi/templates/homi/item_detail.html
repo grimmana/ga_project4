@@ -1,2 +1,13 @@
-<h2>{{ item.name }} <a href="{% url 'item_edit' pk=item.pk %}">(edit)</a><a href="{% url 'item_part_delete' pk=item_part.pk %}">DELETE</a></h2>
-<h3>By: {{ item.room.name }}</h3>
+<!-- homi/templates/homi/item_detail.html -->
+{% extends 'homi/base.html' %} {% block content %}
+
+<h3>Room: {{ room.name }}</h3>
+<h2>{{ item.name }} <a href="{% url 'item_edit' pk=item.pk %}">(edit)</a><a href="{% url 'item_delete' pk=item.pk %}">DELETE</a></h2>
+<div>
+    <a href="{% url 'item_detail' pk=item.pk %}">{{ item.name }}</a>
+</div>
+
+
+{% endblock %}
+
+

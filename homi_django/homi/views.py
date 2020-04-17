@@ -1,9 +1,8 @@
+# homi/views.py
 from django.shortcuts import render, redirect
 from .models import Room, Item
 from .forms import RoomForm, ItemForm
 # Create your views here.
-
-# homi/views.py
 
 def room_list(request):
     rooms = Room.objects.all()
@@ -50,7 +49,7 @@ def room_edit(request, pk):
             return redirect('room_detail', pk=room.pk)
     else:
         form = RoomForm(instance=room)
-    return render(request, 'homi/item.html', {'form': form})
+    return render(request, 'homi/item_form.html', {'form': form})
 
 def item_edit(request, pk):
     item = Item.objects.get(pk=pk)
