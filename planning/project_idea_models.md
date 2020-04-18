@@ -1,0 +1,1 @@
+The model for this project is a `Room` can have many `Item`s. This follows other lab and lessons like the Django mini, Nostaldja, Tunr and Hogwarts.
