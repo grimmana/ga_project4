@@ -1,22 +1,10 @@
 # Project Estimates
 
-
-
-| Component     	| Priority 	| Estimated-time 	| Time-invested 	| Actual-time 	|
-|---------------	|----------	|----------------	|---------------	|-------------	|
-| Research      	| H        	|      16          	|      8         	|             	|
-| Documentation 	| M        	|      24        	|      1        	|             	|
-| User stories  	| H        	|       4          	|      .5         	|             	|
-| Wireframe     	| H        	|       1         	|               	|             	|
-|               	|          	|                	|               	|             	|
-|               	|          	|                	|               	|             	|
-|               	|          	|                	|               	|             	|
-|               	|          	|                	|               	|             	|
-
-
-
-
-
+| Component     	| Priority 	| Estimated-time 	| Time-invested 	| 
+|---------------	|----------	|----------------	|---------------	|
+| Research      	| H        	|      24          	|      16         	| 
+| Documentation 	| M        	|       4        	|       2        	|
+| User stories  	| H        	|       4          	|       2         	| 
 
 
 
