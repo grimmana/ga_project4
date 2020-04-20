@@ -1,1 +1,1 @@
-web: gunicorn homi_django.homi_django.wsgi --log-file -
+web: gunicorn homi_django.wsgi --log-file -
