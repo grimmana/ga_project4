@@ -18,6 +18,7 @@ PostgreSQL
 NodeJS
 Virtual environments
 Heroku
+Dotenv
 
 
 ### Additional Resources

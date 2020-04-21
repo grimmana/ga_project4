@@ -1,0 +1,22 @@
+{
+  "name": "ga_project4",
+  "version": "1.0.0",
+  "description": "GA - Capstone Project Link: [GitHub grimmana ga_project4](https://github.com/grimmana/ga_project4)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grimmana/ga_project4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grimmana/ga_project4/issues"
+  },
+  "homepage": "https://github.com/grimmana/ga_project4#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
