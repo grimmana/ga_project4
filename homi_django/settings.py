@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'homi',
     'accounts',
+    'django.contrib.sites',
 ]
 
 MIDDLEWARE = [
